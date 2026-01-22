@@ -80,3 +80,47 @@ body {
   word-spacing: 1px;
   font-size: 18px;
 }
+/** Calculator */
+.calcularor {
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  width: 300px;
+}
+#display {
+  width: 100%;
+  height: 80px;
+  border: 0;
+  border-bottom: 2px solid black;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 35px;
+  text-align: right;
+  font-weight: bold;
+  padding: 5px;
+}
+#display:focus {
+  border: 0;
+  border-bottom: 2px solid black;
+  outline: 0;
+}
+#calculator-btn {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+#calculator-btn button {
+  height: 50px;
+  background-color: black;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 4px;
+}
+#calculator-btn button:hover {
+  background-color: rgb(41, 41, 41);
+}
+.btn_equal {
+  grid-column: 3/-1;
+}
